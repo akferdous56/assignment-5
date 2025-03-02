@@ -7,85 +7,100 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
 <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
-<body>
-    
-  <div class="grid grid-cols-3 gap-4">
-    <div class="bg-blue-500 p-4">Item 1</div>
-    <div class="bg-blue-500 p-4">Item 1</div>
-    <div class="bg-blue-500 p-4">Item 1</div>
-   
-  </div>     
+<body class="bg-blue-50 max-w-screen-full">
 
-
-
-  <div class="bg-blue-500 p-4">Item 1</div>
-  <div class="bg-blue-500 p-4">Item 1</div>
-  <div class="bg-blue-500 p-4">Item 1</div>
- 
-  <div class="flex items-center gap-3 bg-blue-50 p-3  rounded-lg  ">
-    <div class=" bg-white p-3 rounded-full">
-        <img class="h-8 " src="assets/checkbox.png" alt="">
-    </div>
-    <div> 
-       <h1>Task Assigned</h1>
-       <p class="font-bold text-2xl">05</p>
-
-     </div>
-
-</div>
-<div class="flex items-center gap-3 bg-gradient-to-r from-blue-500 to- via-blue-700  p-3 rounded-lg ">
-    <img class="" src="assets/board.png" alt="">
-    <div> 
-       
-       <p class=" text-white">Discover Something <br>
-         New Today!</p>
-
-     </div>
-
-</div>
-<div class="flex items-center gap-3 bg-blue-50 p-3 rounded-lg  ">
-   <div class=" bg-white p-3 rounded-full ">
-    <img class="h-8" src="assets/calender.png" alt="">
-   </div>
-    <div> 
-       
-       <p>wed,<br> <span class="font-bold">Jul 28 2025 </span></p>
-
-     </div>
-
-
-
-<div class=" bg-white  w-[320px] h-[250px] p-3 rounded-lg  ">
-<button class="bg-white p-3 rounded-md">
-ShopEase
-</button>
-<p class="font-bold text-xl  ">Fix Mobile Button Issue </p>
-<p class="bg-white p-2 w-60 rounded-md text-gray-400">Debug using Chrome DevTools, check for overlapping .</p>
-<div class="flex items-center gap-16">
-<div>
-    <h1 class="text-gray-400">Dateline</h1>
-<p class="font-semibold">21 March 2025</p>
-</div>
-<div>
-    <button class="btn bg-blue-700 text-white rounded-lg">completed</button>
-</div>
-</div>
-<div class=" bg-white  w-[320px] h-[250px] p-3 rounded-lg  ">
-<button class="bg-white p-3 rounded-md">
-ShopEase
-</button>
-<p class="font-bold text-xl  ">Fix Mobile Button Issue </p>
-<p class="bg-white p-2 w-60 rounded-md text-gray-400">Debug using Chrome DevTools, check for overlapping .</p>
-<div class="flex items-center gap-16">
-<div>
-    <h1 class="text-gray-400">Dateline</h1>
-<p class="font-semibold">21 March 2025</p>
-</div>
-<div>
-    <button class="btn bg-blue-700 text-white rounded-lg">completed</button>
-</div>
-</div>
-
+    <nav class="max-w-screen-xl mx-auto py-3 ">
+        <header class="flex  justify-between items-center bg-white rounded-l-lg px-6  p-2 ">
+          <div class="flex mt-2 items-center gap-2">
+              <img class="h-8" src="assets/logo.png" alt="">
+              <div>
+                  <p class="text-xl">Dev<span class="font-bold">Board</span></p>
+              </div>
+          </div>
+         <div>
+            <button id="back" class="btn bg-blue-700 rounded-lg text-white">Back to desk</button>
+         </div>
+        </header>
       
+        </nav>
+
+        <section class="max-w-screen-xl mx-auto py-3 ">
+
+            <div class="bg-white p-6 rounded-lg">
+                <h1 class="font-bold">
+                    Question-1: What are the different ways to select an element in the DOM?
+                </h1>
+                <div class="mt-4">
+                    <li>getElementById()</li>
+                <li>getElementsByClassName()</li>
+                <li>getElementsByTagName()</li>
+                <li>querySelector()</li>
+                <li>querySelectorAll()</li>
+                <li>getElementsByName()</li>
+                </div>
+            </div>
+
+            <div class="mt-4 bg-white p-6 rounded-lg">
+                <p class="font-bold">Question-2: What is the difference between innerHTML, innerText, and textContent ?</p>
+
+                <div class="mt-3">
+                    <h1 class="font-semibold">innerText:</h1>
+                <p>এটি HTML এর ভিতরের শুধুমাত্র টেক্সট প্রদান বা সেট করতে ব্যবহৃত হয়। </p>
+
+                </div>
+                <div class="mt-3">
+                    <h1 class="font-semibold">
+                        innerHTML:
+                    </h1>
+
+                    <p>এটি HTML কন্টেন্ট (ট্যাগসহ) গ্রহণ এবং সেট করতে ব্যবহৃত হয়।</p>
+                </div>
+
+                <div class="mt-3">
+                    <h1 class="font-semibold">textContent:</h1>
+                    <p>কেবলমাত্র উপাদানের ভিতরের সব টেক্সট সরবরাহ করে, যেকোনো HTML ট্যাগ বা স্টাইল বিবেচনা না করে।</p>
+                </div>
+
+                
+
+            </div>
+
+            <div class="mt-4 bg-white p-6 rounded-lg">
+                <h1 class="font-bold">Question-3: What is event delegation in the DOM?</h1>
+                <p class="mt-4">Event Delegation হল DOM-এ একটি কৌশল যেখানে আপনি একটি প্যারেন্ট উপাদানে একটি ইভেন্ট হ্যান্ডলার যুক্ত করতে পারেন এবং ইভেন্টটি সঠিক উপাদানটির জন্য প্রপাগেট 
+                    করতে পারে। এর মাধ্যমে আপনি ডাইনামিক্যালি তৈরি হওয়া বা অনেক উপাদান নিয়ন্ত্রণ করতে পারেন ।</p>
+
+            </div>
+            <div class="mt-4 bg-white p-6 rounded-lg">
+                <h1>Question-4: What is event bubbling in the DOM?</h1>
+                <p class="mt-4">Event Bubbling DOM-এ একটি ইভেন্ট প্রপাগেশন প্রক্রিয়া যা ঘটে যখন একটি ইভেন্ট একটি নির্দিষ্ট উপাদানে ট্রিগার হয় এবং তারপরে ঐ ইভেন্টটি সেই উপাদানের প্যারেন্ট উপাদানগুলির উপরের দিকের (বাবল) পৌঁছায়, যতক্ষণ না এটি ডকুমেন্টের মূল (document) উপাদানে না পৌঁছায়।</p>
+
+            </div>
+
+            <div class="mt-4 bg-white p-6 rounded-lg">
+                <h1 class="font-bold">Question-5: How do you create, add, and remove elements using JavaScript?</h1>
+                <div class="mt-4">
+                    <h1>create এর জন্য :</h1>
+                    <li>document.createElement()</li>
+                </div>
+                <div class="mt-4"> 
+                    <h1>add এর জন্য :</h1>
+                    <li>appendChild()</li>
+                    <li>insertBefore()</li>
+                    <li>append()</li>
+                </div>
+                <div class="mt-4">
+                    <h1> remove এর জন্য :</h1>
+                    <li>removeChild()</li>
+                    <li>remove()</li>
+                    
+                </div>
+
+            </div>
+
+        </section>
+    
+  
+<script src="script/third.js"></script>
 </body>
 </html>
