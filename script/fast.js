@@ -152,7 +152,8 @@ container.appendChild(paid)
 
   
   document.getElementById("theme").addEventListener("click",function(){
-     
+       
+    document.body.style.backgroundColor = "pink"
     
   })
 
