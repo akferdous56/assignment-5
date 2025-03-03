@@ -13,8 +13,16 @@
   
  const container = document.getElementById("trans-data")
  
+ const now = new Date();
+    const time =now.toLocaleTimeString();
+ 
  const paid = document.createElement("p")
- paid.innerText=` You have Complete The Fix Mobile Button Issue at 12:48:15 PM
+ paid.classList.add("bg-gray-100")
+ paid.classList.add("m-2")
+ paid.classList.add("rounded-xl")
+ paid.classList.add("p-2")
+ paid.classList.add("bg-gray-100")
+ paid.innerText=` You have Complete The Fix Mobile Button Issue at ${time} 
  `
  
 container.appendChild(paid)
@@ -37,11 +45,20 @@ document.getElementById("btn-2").addEventListener("click" , function(){
     const convertNum = parseInt(add)
     const sum = convertNum +1
     document.getElementById("count-add").innerText = sum
+
+    
     
     const container = document.getElementById("trans-data")
+    const now = new Date();
+    const time =now.toLocaleTimeString();
  
  const paid = document.createElement("p")
- paid.innerText=` You have Complete The Task Add Dark Mode at 12:48:15 PM
+ paid.classList.add("bg-gray-100")
+ paid.classList.add("m-2")
+ paid.classList.add("rounded-xl")
+ paid.classList.add("p-2")
+ paid.classList.add("bg-gray-100")
+ paid.innerText=` You have Complete The Task Add Dark Mode at ${time}  
  `
  
 container.appendChild(paid)
@@ -65,12 +82,20 @@ document.getElementById("btn-3").addEventListener("click" , function(){
     document.getElementById("count-add").innerText = sum
 
     const container = document.getElementById("trans-data")
+    const now = new Date();
+    const time =now.toLocaleTimeString();
  
- const paid = document.createElement("p")
- paid.innerText=` You have Complete The Optimize Home page at 12:48:15 PM
- `
  
-container.appendChild(paid)
+     const paid = document.createElement("p")
+     paid.classList.add("bg-gray-100")
+     paid.classList.add("m-2")
+     paid.classList.add("rounded-xl")
+     paid.classList.add("p-2")
+     paid.classList.add("bg-gray-100")
+     paid.innerText=` You have Complete The Optimize Home page at ${time} 
+     `
+ 
+    container.appendChild(paid)
 
     document.getElementById("btn-3").disabled = true
   })
@@ -91,9 +116,17 @@ container.appendChild(paid)
     const sum = convertNum +1
     document.getElementById("count-add").innerText = sum
     const container = document.getElementById("trans-data")
+    const now = new Date();
+    const time =now.toLocaleTimeString();
+ 
  
  const paid = document.createElement("p")
- paid.innerText=` You have Complete The Add new emoji 🤲at 12:48:15 PM
+ paid.classList.add("bg-gray-100")
+ paid.classList.add("m-2")
+ paid.classList.add("rounded-xl")
+ paid.classList.add("p-2")
+ paid.classList.add("bg-gray-100")
+ paid.innerText=` You have Complete The Add new emoji 🤲at ${time} 
  `
  
 container.appendChild(paid)
@@ -115,9 +148,17 @@ container.appendChild(paid)
     const sum = convertNum +1
     document.getElementById("count-add").innerText = sum
     const container = document.getElementById("trans-data")
+    const now = new Date();
+    const time =now.toLocaleTimeString();
+ 
  
  const paid = document.createElement("p")
- paid.innerText=` You have Complete Integrate OpenAI APIat 12:48:15 PM
+ paid.classList.add("bg-gray-100")
+ paid.classList.add("m-2")
+ paid.classList.add("rounded-xl")
+ paid.classList.add("p-2")
+ paid.classList.add("bg-gray-100")
+ paid.innerText=` You have Complete Integrate OpenAI API at ${time} 
  `
  
 container.appendChild(paid)
@@ -140,9 +181,17 @@ container.appendChild(paid)
     const sum = convertNum +1
     document.getElementById("count-add").innerText = sum
     const container = document.getElementById("trans-data")
+    const now = new Date();
+    const time =now.toLocaleTimeString();
+ 
  
  const paid = document.createElement("p")
- paid.innerText=` You have Complete The Improve Job searching at 12:48:15 PM
+ paid.classList.add("bg-gray-100")
+ paid.classList.add("m-2")
+ paid.classList.add("rounded-xl")
+ paid.classList.add("p-2")
+ paid.classList.add("bg-gray-100")
+ paid.innerText=` You have Complete The Improve Job searching at ${time} 
  `
  
 container.appendChild(paid)
@@ -150,13 +199,15 @@ container.appendChild(paid)
     document.getElementById("btn-6").disabled = true
   })
 
-  
-  document.getElementById("theme").addEventListener("click",function(){
-       
-    document.body.style.backgroundColor = "pink"
-    
-  })
+  document.getElementById("theme").addEventListener("click", function(){
+   const randomColor = `#${Math.floor(Math.random()*16777215).toString(16)}`;
+   document.body.style.backgroundColor = randomColor;
 
+ 
+
+  });
+
+  
 
   
   

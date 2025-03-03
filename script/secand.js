@@ -4,4 +4,7 @@
  })
  
 
- 
+ document.getElementById("Clear").addEventListener("click",function(){
+    const Clear = document.getElementById("trans-data").innerText=""
+   
+ })
